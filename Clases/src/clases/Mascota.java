@@ -17,6 +17,7 @@ public class Mascota {
     private String tipo;
     private String raza;
     private int edad;
+    private Propietario propietario;
 //    private Vacuna infoVacuna;
     private ArrayList<Vacuna> vacunas = new ArrayList();
     
@@ -26,7 +27,7 @@ public class Mascota {
 
     //constructor por defecto
     // definido de forma implicita
-    Mascota(String nombre, String tipo, String raza, int edad, ArrayList<Vacuna> vacunas) {
+    Mascota(String nombre, String tipo, String raza, int edad, ArrayList<Vacuna> vacunas, Propietario propietario) {
 
 //        this = una instancia de "Mascota"
         this.nombre = nombre;
@@ -37,6 +38,7 @@ public class Mascota {
 
 //        this.infoVacuna = info;
         this.vacunas = vacunas;
+        this.propietario = propietario;
 
     }
 
@@ -74,6 +76,8 @@ public class Mascota {
                System.out.println("\n");
 
            }
+            this.propietario.mostarinfo();
+
 
     }
 
@@ -94,6 +98,9 @@ public class Mascota {
 
         this.nombre = valor;
 
+    }
+    public Propietario getPropietario(){
+        return propietario;
     }
 
 }

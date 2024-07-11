@@ -26,7 +26,7 @@ public class Clases {
 //        4. POLIMORFISMO
 
 
-        
+        Propietario propietario = new Propietario("Juan Alvarenga", 30,"Masculino");
         // definir la varibale que contendrá todas las vacunas
         ArrayList<Vacuna> vacunasAplicadas = new ArrayList();
         
@@ -44,7 +44,7 @@ public class Clases {
            // Se puede usar de forma independiente
 //        informacion.mostrarInformacion();
         
-        Mascota apolo = new Mascota("Apolo", "Perro", "Terrier", 2, vacunasAplicadas);
+        Mascota apolo = new Mascota("Apolo", "Perro", "Terrier", 2, vacunasAplicadas, propietario);
 
 //           apolo.nombre = "Apolo";
 //           apolo.tipo = "Perro";
